@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Pagina JavaScript9</title>
+</head>
+<body>
+ <input type="number" id="nota"></input>
+ <button onclick="evaluarNota()">Evaluar nota</button>
+ <script>
+    function evaluarNota()
+    {
+     let nota = document.getElementById("nota").value;
+
+     if (nota >= 6)
+     {
+      alert("Aprobado");
+     }
+     else
+     {
+      alert("Desaprobado");
+     }
+    }
+ </script>   
+</body>
+</html>

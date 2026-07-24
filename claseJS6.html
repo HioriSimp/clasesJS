@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Pagina JavaScript 6</title>
+</head>
+<body>
+    <input type="number" id="edad">
+    <button onclick="verificarEdad()">Verificar Edad</button>
+    <script>
+        function verificarEdad()
+        
+        {
+        let edad = document.getElementById("edad").value;
+        if (edad >= 18)
+        {
+            alert("Eres mayor de edad");
+        }
+        else
+        {
+            alert("Eres menor de edad");
+        }
+        }
+    </script>
+</html>

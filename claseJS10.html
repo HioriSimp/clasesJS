@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Pagina JavaScript 10</title>
+</head>
+<body>
+ <button onclick="mostrarSaludo()">Mostrar Saludo</button>
+ <script>
+    function mostrarSaludo()
+    {
+        var hora = new Date().getHours();
+        if (hora >= 6 && hora < 12)
+        {
+            alert("Buenos dias");
+        } 
+        else if (hora >13 && hora < 20)
+        {
+          alert("Buenas tardes");
+    
+        }
+        else
+        {   
+          alert("Buenas noches");
+        }
+
+    }
+</script>
+</body>
+</html>
