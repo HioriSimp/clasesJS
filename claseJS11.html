@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios con For</title>
+</head>
+<body>
+
+    <h1>Ejercicios de JavaScript</h1>
+    <div id="resultado"></div>
+
+    <script>
+        let salida = "";
+
+        // 1. Mostrar los números del 1 al 10
+        salida += "<h3>1. Números del 1 al 10</h3>";
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+            salida += i + "<br>";
+        }
+
+        // 2. Mostrar los números del 10 al 1
+        salida += "<h3>2. Números del 10 al 1</h3>";
+        for (let i = 10; i >= 1; i--) {
+            console.log(i);
+            salida += i + "<br>";
+        }
+
+        // 3. Mostrar únicamente los números pares del 2 al 20
+        salida += "<h3>3. Números pares del 2 al 20</h3>";
+        for (let i = 2; i <= 20; i += 2) {
+            console.log(i);
+            salida += i + "<br>";
+        }
+
+        // 4. Mostrar cinco veces un mensaje de bienvenida
+        salida += "<h3>4. Mensaje de bienvenida</h3>";
+        for (let i = 1; i <= 5; i++) {
+            console.log("Bienvenido");
+            salida += "Bienvenido<br>";
+        }
+
+        document.getElementById("resultado").innerHTML = salida;
+    </script>
+
+</body>
+</html>
